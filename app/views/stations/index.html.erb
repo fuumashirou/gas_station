@@ -36,4 +36,9 @@
 
 <%= link_to 'New Station', new_station_path %>
 
+<h2> Import Products </h2>
 
+<%= form_tag import_stations_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Import" %>
+<% end %>

@@ -61,6 +61,11 @@ class StationsController < ApplicationController
     end
   end
 
+  def import
+    Station.import(params[:file])
+    redirect_to stations_path, notice: "Stations imported."
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_station
