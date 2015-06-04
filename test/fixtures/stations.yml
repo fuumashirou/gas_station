@@ -1,13 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  type: 
-  price: 9.99
+  name: MyString
+  oct93: 9.99
+  oct94: 9.99
+  oct95: 9.99
   city: MyString
   comune: MyString
 
 two:
-  type: 
-  price: 9.99
+  name: MyString
+  oct93: 9.99
+  oct94: 9.99
+  oct95: 9.99
   city: MyString
   comune: MyString
