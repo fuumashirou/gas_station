@@ -11,6 +11,9 @@
       <th>Oct95</th>
       <th>City</th>
       <th>Comune</th>
+      <th>Address</th>
+      <th>Longitude</th>
+      <th>Latitude</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -24,6 +27,9 @@
         <td><%= station.oct95 %></td>
         <td><%= station.city %></td>
         <td><%= station.comune %></td>
+        <td><%= station.address %></td>
+        <td><%= station.longitude %></td>
+        <td><%= station.latitude %></td>
         <td><%= link_to 'Show', station %></td>
         <td><%= link_to 'Edit', edit_station_path(station) %></td>
         <td><%= link_to 'Destroy', station, method: :delete, data: { confirm: 'Are you sure?' } %></td>
