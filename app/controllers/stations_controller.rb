@@ -61,6 +61,11 @@ class StationsController < ApplicationController
     end
   end
 
+  def import
+    Station.import(params[:file])
+    redirect_to stations_path, notice: "Stations imported."
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_station
@@ -69,6 +74,6 @@ class StationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def station_params
-      params.require(:station).permit(:name, :oct93, :oct94, :oct95, :city, :comune)
+      params.require(:station).permit(:name, :oct93, :oct94, :oct95, :city, :comune, :address, :longitude, :latitude)
     end
 end
