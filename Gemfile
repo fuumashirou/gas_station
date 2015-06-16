@@ -27,6 +27,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'roo'
 gem "iconv", "~> 1.0.3"
 gem 'roo-xls'
+
+#googlemaps api
+gem 'geocoder'
+gem 'gmaps4rails'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
